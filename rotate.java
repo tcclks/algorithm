@@ -11,6 +11,7 @@ public class SolutionRotate {
 
         // 翻转所有元素，然后翻转前k个元素，再翻转后面n - k个元素
         // O(n)
+        k %= nums.length;
         reverse(nums, 0, nums.length - 1);
         reverse(nums, 0, k - 1);
         reverse(nums, k, nums.length - 1);
