@@ -1,6 +1,7 @@
 public class SolutionRotate {
     public void rotate(int[] nums, int k) {
 /*        //O(kn)的解法
+        k %= nums.length;
         for (int i = 0; i < k; i++) {
             int c = nums[nums.length - 1];
             for (int j = nums.length - 1; j > 0; j--) {
